@@ -52,6 +52,9 @@ vercel --prod
 | Library | Link |
 |---|---|
 | **Lucide Icons** | [lucide.dev](https://lucide.dev/) |
+| **Feather Icons** | [feathericons.com](https://lucide.dev/) |
+| **Ionicons** | [ionic.io](https://ionic.io/ionicons) |
+
 
 **Install:**
 ```bash
