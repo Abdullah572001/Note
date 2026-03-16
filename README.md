@@ -47,6 +47,49 @@ vercel --prod
 
 ---
 
+## 🚀 Netlify Deploy Guide
+
+### Step 1 — `netlify.toml` ফাইল তৈরি করো
+
+`public/` folder এর ভেতরে `netlify.toml` নামে একটি ফাইল তৈরি করো এবং নিচের code টুকু লেখো:
+```toml
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+```
+
+### Step 2 — File Structure
+```
+public/
+  netlify.toml   ← এখানে রাখো
+  index.html
+src/
+  ...
+```
+
+### Step 3 — Build করো
+```bash
+npm run build
+```
+
+### Step 4 — GitHub এ Push করো
+```bash
+git add .
+git commit -m "fix: add netlify.toml for routing"
+git push
+```
+
+### Step 5 — Netlify Dashboard এ Settings
+```
+Build command:     npm run build
+Publish directory: dist
+```
+
+> ⚠️ **এই ফাইলটি ছাড়া** Netlify তে React Router কাজ করবে না এবং page refresh করলে 404 error আসবে।
+
+---
+
 ## 🎨 Icons
 
 | Library | Link |
