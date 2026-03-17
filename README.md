@@ -180,4 +180,20 @@ const res = await axios.delete('/api/users/1');
 
 
 ---
+
+## 🍬 SweetAlert2
+
+### Install
+```bash
+npm install sweetalert2
+```
+
+### Import
+```jsx
+import Swal from 'sweetalert2';
+```
+
+> 🔗 Official Docs: [sweetalert2.github.io](https://sweetalert2.github.io/)
+
+---
 > 💡 **Tip:** Bookmark these resources — they will save you hours of development time!
